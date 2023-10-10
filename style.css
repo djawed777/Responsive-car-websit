@@ -1,0 +1,318 @@
+/* roote color and size and all the element  */
+:root {
+  --main-color: #000080;
+  --second-color: #c0c0c0;
+  --transition-: 0.3s;
+}
+
+/* Start global rules  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  padding: 0 20px;
+}
+.sub-title {
+  text-align: center;
+  color: var(--second-color);
+  padding: 30px 0;
+}
+/* -------section 1 --------- */
+
+.header {
+  background-image: url(images/new-background.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  top: 15px;
+}
+nav img {
+  width: 40px;
+  margin-top: 20px;
+}
+
+.head-txt {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: #c0c0c07a;
+  padding: 20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* ----------super car -------- */
+#cars {
+  padding: 100px 0;
+  position: relative;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.boxes img {
+  width: 100%;
+}
+.boxes .box {
+  position: relative;
+  background-color: var(--second-color);
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+.boxes .box::before {
+  content: "";
+}
+.opt.off {
+  display: none;
+}
+.opt {
+  display: none;
+  position: absolute;
+  background-color: #000000d2;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  color: white;
+}
+.opt .option-card {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  background-color: var(--second-color);
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.opt .image {
+  flex-basis: 50%;
+}
+.opt .option-card img {
+  width: 100%;
+  margin-right: 30px;
+}
+.opt.option-card .text h1 {
+  color: aqua;
+}
+.opt .option-card .text span {
+  display: block;
+  margin-bottom: 30px;
+}
+#ext {
+  position: absolute;
+  left: 45%;
+  bottom: 33%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-options {
+  cursor: pointer;
+  color: white;
+  background-color: #f44336;
+  margin-top: 30px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn-options:hover {
+  color: #f44336;
+  background-color: white;
+}
+
+/* ---------data section -------- */
+.our-data {
+  padding: 0 0 100px;
+}
+
+.our-data .bags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.bags .bag {
+  position: relative;
+  background-color: #c0c0c082;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bags .bag::before,
+.bags .bag::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: var(--main-color);
+  height: 0%;
+  transition: 0.3s;
+}
+.bags .bag::before {
+  right: 0;
+  bottom: 0;
+}
+.bags .bag::after {
+  left: 0;
+  top: 0;
+}
+.bags .bag:hover::before,
+.bags .bag:hover::after {
+  height: 100%;
+}
+
+/* ----------- contact us section --------- */
+
+.contact {
+  padding: 0 0 100px;
+}
+
+.contact .contact-us {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact .contact-us .img-contact {
+  flex-basis: 50%;
+}
+.contact .contact-us .img-contact img {
+  width: 100%;
+  border-radius: 6px;
+}
+.contact-us .informations {
+  flex: 1;
+}
+
+.contact-us form input {
+  display: block;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.contact-us form textarea {
+  border: 1px solid transparent;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  transition: 0.3s;
+}
+.contact-us form input:focus,
+.contact-us form textarea:focus {
+  border-color: green;
+}
+.btn-sent {
+  padding: 5px 15px;
+  color: white;
+  background-color: green;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  margin: 15px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.informations #msg {
+  font-weight: bold;
+  color: #008000ed;
+  font-size: 15px;
+}
+
+/* ---------end --------- */
+.last {
+  border-top: 1px solid black;
+  text-align: center;
+  width: 100%;
+}
+.last .End {
+  margin-top: 15px;
+}
+.last .End span {
+  font-weight: bold;
+  color: aqua;
+}
+/* ------ Media Query --------- */
+@media (max-width: 768px) {
+  /* Modify the styling for the "Cars" section */
+  #cars {
+    padding: 50px 0;
+  }
+  .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .boxes .box {
+    padding: 10px;
+  }
+
+  /* Modify the styling for the "Our Data" section */
+  .our-data .bags {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .bags .bag {
+    padding: 10px;
+  }
+  .contact-us {
+    flex-direction: column;
+  }
+  .contact .contact-us .img-contact img {
+    display: none;
+  }
+  .contact-us form input,
+  .contact-us form textarea {
+    padding: 10px;
+  }
+}
+/* Add this media query for screens with a width of 1376px */
+@media (min-width: 1376px) {
+  #cars {
+    padding: 80px 0;
+  }
+  .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    .boxes .box {
+      padding: 20px;
+    }
+
+    .our-data .bags {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 30px;
+    }
+    .bags .bag {
+      padding: 20px;
+    }
+  }
+}

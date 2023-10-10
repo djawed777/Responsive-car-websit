@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mercedes Web Site</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@400;700&family=Work+Sans:ital,wght@0,800;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/84bb640420.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <img src="images/logo.png" alt="" />
+      </nav>
+      <div class="head-txt">
+        <p>DJawed</p>
+        <h1>Mercedes World Cars</h1>
+      </div>
+    </div>
+    <!-- ------super car --------- -->
+    <div id="cars">
+      <div class="sub-title">
+        <h1>Best Cars</h1>
+      </div>
+      <div class="container">
+        <div class="boxes">
+          <div class="box">
+            <div class="data">
+              <img src="images/Mercedes-AMG SLK 55 Exterior.png" alt="" />
+              <div class="info">
+                <h1>Mercedes-AMG SLK 55</h1>
+                <p>
+                  This is one of the most beatiful Mercedes with a simple design
+                </p>
+              </div>
+              <button class="btn-options" id="">Options</button>
+            </div>
+          </div>
+          <div class="opt" id="car-1">
+            <div class="option-card">
+              <div class="image">
+                <img src="images/mercedes 1.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h1>Name care</h1>
+                <span>1221254</span>
+                <span>1221254</span>
+                <span>1221254</span>
+                <span>1221254</span>
+              </div>
+            </div>
+            <button id="ext">Exite</button>
+          </div>
+          <div class="box">
+            <div class="data">
+              <img src="images/Mercedes-Benz AMG GTR.png" alt="" />
+              <div class="info">
+                <h1>Mercedes-AMG GTR</h1>
+                <p>
+                  This also is one of the most beatiful Mercedes with a super
+                  design
+                </p>
+              </div>
+              <button class="btn-options">Options</button>
+            </div>
+          </div>
+          <div class="opt" id="car-2">
+            <div class="option-card">
+              <div class="image">
+                <img src="images/Mercedes-Benz AMG GTR.png" alt="" />
+              </div>
+              <div class="text">
+                <h1>Name care</h1>
+                <span>1221254</span>
+                <span>1221254</span>
+                <span>1221254</span>
+                <span>1221254</span>
+              </div>
+            </div>
+            <button id="ext">Exite</button>
+          </div>
+          <div class="box">
+            <div class="data">
+              <img src="images/GT-CLASS C 190.png" alt="" />
+              <div class="info">
+                <h1>Mercedes GT-CLASS C</h1>
+                <p>
+                  This is one of the most beatiful Mercedes with a simple design
+                </p>
+              </div>
+              <button class="btn-options">Options</button>
+            </div>
+          </div>
+          <div class="opt" id="car-3">
+            <div class="option-card">
+              <div class="image">
+                <img src="images/mercedes 3.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h1>Name care</h1>
+                <span>1221254</span>
+                <span>1221254</span>
+                <span>1221254</span>
+                <span>1221254</span>
+              </div>
+            </div>
+            <button id="ext">Exite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------client------------ -->
+    <div class="our-data">
+      <h1 class="sub-title">Our Data</h1>
+      <div class="container">
+        <div class="bags">
+          <div class="bag">
+            <i class="fa-solid fa-user"></i>
+            <h2>Client</h2>
+            <span class="num" data-goal="150">0</span>
+          </div>
+          <div class="bag">
+            <i class="fa-solid fa-globe"></i>
+            <h2>Countery</h2>
+            <span class="num" data-goal="15">0</span>
+          </div>
+          <div class="bag">
+            <i class="fa-solid fa-car"></i>
+            <h2>Cars</h2>
+            <span class="num" data-goal="25">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------Contact Us ---------- -->
+    <div class="contact">
+      <h1 class="sub-title">Contact Us</h1>
+      <div class="container">
+        <div class="contact-us">
+          <div class="img-contact">
+            <img src="images/new-background.jpg" alt="" />
+          </div>
+          <div class="informations">
+            <form
+              action="https://sheetdb.io/api/v1/eg1rqlqilfoaa"
+              method="post"
+              id="sent"
+            >
+              <input
+                type="text"
+                name="username"
+                autocomplete="username"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                autocomplete="message"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message "
+              ></textarea>
+              <button type="submit" class="btn-sent">Sent</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- End --------- -->
+    <div class="last">
+      <p class="End">&copy; Made By <span>DJawed</span></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
